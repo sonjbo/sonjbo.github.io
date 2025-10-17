@@ -1,4 +1,4 @@
-## Hi, I’m Sonia Bolshakova
+## Hi, I’m Sonia
 
 I’m currently a Computational Associate in the Nehme Lab at the Broad Institute of MIT and Harvard, where I study how genetic variation influences molecular and cellular responses in iPSC-derived models of psychiatric disease. My work focuses on integrating large-scale genomic and transcriptomic data to understand how genetic background shapes disease-relevant biology, using computational tools in R, Python, and bash to analyze and interpret complex sequencing datasets.
 
