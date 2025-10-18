@@ -37,7 +37,6 @@
     --black: #000;
     --pink: #ff3258;
     --white: #f0e9f2;
-    --white-1: #e5e5e6da;
 
 
     --container-max-width: 1180px;
@@ -70,7 +69,7 @@ body {
     font-size: var(--font-size-small);
     font-family: var(--font-stack);
     font-weight: 400;
-    color: var(--white-1);
+    color: var(--black);
     line-height: var(--line-height-normal);
     background: var(--white);
     overflow-x: hidden;
