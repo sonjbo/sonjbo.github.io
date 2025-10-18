@@ -411,52 +411,47 @@ body:not(.user-is-tabbing) a:focus {
     font-size: var(--font-size-normal);
 }
 
-.header__text {
-    flex: 1 1 40%;
-    text-align: left;
-}
-
-/* ===== Custom Two-Column Header ===== */
-.header__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* center vertically */
-    gap: 4rem;
-    flex-wrap: wrap;
-    height: 100%; /* make full height if desired */
-    margin-top: 0; /* optional: remove top margin */
+.header {
+    background: url('./images/header_sonj.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: var(--font-size-normal);
+    color: var(--white);
   }
   
-  /* Left (name + short intro) */
+  /* Two-column layout */
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 4rem;
+  }
+  
+  /* Left side */
   .header__text {
     flex: 1 1 40%;
     text-align: left;
   }
   
-  /* Right (About Me text) */
+  /* Right side */
   .header__about {
     flex: 1 1 55%;
     text-align: left;
     font-size: 1.6rem;
     line-height: 1.6;
-    color: var(--white); /* or var(--black) if you’ve changed background */
   }
   
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     .header__content {
       flex-direction: column;
+      padding: 2rem;
     }
   }
-
-@media(max-width: 500px) {
-    .header {
-        text-align: center;
-    }
-
-    .header__text p {
-        transform: scale(.8);
-    }
-}
 
 /* --------------------------------------- */
 /* ----- Work ----- */
