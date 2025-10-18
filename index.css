@@ -124,7 +124,7 @@ h3 {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     line-height: var(--line-height-small);
-    color: var(--white);
+    color: var(--black);
 }
 
 .heading-primary {
@@ -187,7 +187,7 @@ p {
 /* --------------------------------------- */
 
 a {
-    color: var(--white);
+    color: var(--black);
     font-weight: 400;
     font-family: 'Jost', sans-serif;
     transition: all .2s;
