@@ -412,19 +412,19 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .header__text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    flex: 1 1 40%;
+    text-align: left;
 }
 
 /* ===== Custom Two-Column Header ===== */
 .header__content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center; /* center vertically */
     gap: 4rem;
     flex-wrap: wrap;
-    margin-top: 4rem;
+    height: 100%; /* make full height if desired */
+    margin-top: 0; /* optional: remove top margin */
   }
   
   /* Left (name + short intro) */
