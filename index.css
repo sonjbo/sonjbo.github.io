@@ -405,17 +405,16 @@ body:not(.user-is-tabbing) a:focus {
 
 .header {
     position: relative;
-    background: url('./images/mp.png') center/cover fixed no-repeat;
-    height: 35vh;
+    background: url('./images/mp.png') center/cover no-repeat;
+    height: 45vw;  /* height becomes 35% of viewport width */
     font-size: var(--font-size-normal);
     color: var(--black);
     overflow: hidden;
   }
-  
+
   .header__photo {
     display: block;
-    width: 100%;          
-    max-width: 150px;     
+    width: 100%;             
     height: auto;
     margin: 1.5rem 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -642,7 +641,14 @@ body:not(.user-is-tabbing) a:focus {
 
 .footer__social-image {
     height: 4rem;
-}
+    filter: invert(27%) sepia(7%) saturate(3164%) hue-rotate(139deg) brightness(92%) contrast(89%);
+    transition: filter 0.3s ease;
+  }
+  
+  /* optional: lighten a bit on hover */
+  .footer__social-image:hover {
+    filter: invert(27%) sepia(7%) saturate(3164%) hue-rotate(139deg) brightness(105%) contrast(95%);
+  }
 
 .footer__github-buttons {
     display: flex;
