@@ -405,8 +405,8 @@ body:not(.user-is-tabbing) a:focus {
 
 .header {
     position: relative;
-    background: url('./images/mp.png') center/cover no-repeat;
-    height: 45vw;  /* height becomes 35% of viewport width */
+    background: url('./images/mp.png') center/contain no-repeat;
+    height: 45vw;
     font-size: var(--font-size-normal);
     color: var(--black);
     overflow: hidden;
