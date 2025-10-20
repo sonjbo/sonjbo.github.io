@@ -412,6 +412,15 @@ body:not(.user-is-tabbing) a:focus {
     overflow: hidden;
   }
   
+  .header__photo {
+    display: block;
+    width: 100%;          
+    max-width: 150px;     
+    height: auto;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
   /* create a dark overlay with 70% opacity */
   .header::before {
     content: "";
