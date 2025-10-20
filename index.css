@@ -405,7 +405,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header {
     position: relative;
-    background: url('./images/header_sonj.jpg') center/cover fixed no-repeat;
+    background: url('./images/mp.png') center/cover fixed no-repeat;
     height: 100vh;
     font-size: var(--font-size-normal);
     color: var(--black);
