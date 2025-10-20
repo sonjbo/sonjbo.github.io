@@ -406,7 +406,7 @@ body:not(.user-is-tabbing) a:focus {
 .header {
     position: relative;
     background: url('./images/mp.png') center/cover fixed no-repeat;
-    height: 100vh;
+    height: 35vh;
     font-size: var(--font-size-normal);
     color: var(--black);
     overflow: hidden;
@@ -439,16 +439,6 @@ body:not(.user-is-tabbing) a:focus {
   .header__about {
     position: relative;
     z-index: 1;
-  }
-  
-  .header {
-    position: relative;
-    background:  
-      url('./images/mp.png') center/cover fixed no-repeat;
-    height: 100vh;
-    font-size: var(--font-size-normal);
-    color: var(--black);
-    overflow: hidden;
   }
   
   /* Center the hero text nicely */
@@ -621,7 +611,7 @@ body:not(.user-is-tabbing) a:focus {
     }
   }
 
-  
+
 /* --------------------------------------- */
 /* ----- Contact ----- */
 /* --------------------------------------- */
