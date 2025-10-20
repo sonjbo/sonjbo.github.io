@@ -457,6 +457,7 @@ body:not(.user-is-tabbing) a:focus {
   .heading-primary span {
     font-size: 4rem;
     font-weight: 600;
+    text-align: left;
     display: block;
   }
   
