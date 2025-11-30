@@ -21,9 +21,13 @@
 <body>
 
   <!-- ***** Header ***** -->
-
   <header class="header" role="banner" id="top">
-    <div class="row">
+    <div class="row nav-bar">
+      
+      <div class="site-title">
+        Sonia Bolshakova | Computational Biologist
+      </div>
+  
       <nav class="nav" role="navigation">
         <ul class="nav__items">
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
@@ -32,17 +36,11 @@
           <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </nav>
-    </div>
   
-    <div class="header__content row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <span>Sonia Bolshakova | Computational Biologist.</span>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div>
     </div>
   </header>
   
+
   <main role="main">
 
    <!-- ***** About ***** -->
@@ -55,23 +53,19 @@
       <div class="about__text">
 
         <p>
-          I’m currently a Computational Associate in the Nehme Lab at the Broad Institute of MIT and Harvard, where I study how genetic variation influences molecular and cellular responses in iPSC-derived models of psychiatric disease. 
+            I’m a computational biologist interested in how genetic variation and cellular context shape the biology of neuropsychiatric disorders. 
+          I’m currently a Computational Associate in the Nehme Lab at the Broad Institute of MIT and Harvard, where I study how genetic background shapes molecular and cellular responses to biological perturbations in iPSC-derived neurons and glia. 
+            I hold an M.S. in Bioinformatics from Boston University, as well as dual B.A. degrees in Biology (with a specialization in Behavioral Biology) and Psychology, both from BU. 
         </p>
-
         <p>
-          I hold an M.S. in Bioinformatics from Boston University, as well as dual B.A. degrees in Biology (with a specialization in Behavioral Biology) and Psychology, both from BU. 
+            This portfolio showcases a selection of research projects, analyses, and tools I’ve developed as a bioinformatician.
         </p>
 
-        <p>
-          This portfolio highlights selected computational projects and tools I’ve developed as part of my work as a bioinformatician.
-        </p>
-
-        <a href="#" class="btn">My Resume</a>
       </div>
 
       <!-- LEFT SIDE: Photo -->
       <div class="about__photo-container">
-        <img class="about__photo" src="./images/sonia_profile.jpg" alt="Sonia Bolshakova" />
+        <img class="about__photo" src="./images/headshot.jpg" alt="Sonia Bolshakova" />
       </div>
 
     </div>
@@ -90,84 +84,77 @@
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Portfolio Template</h3>
+              <h3><a href="https://www.nehmelab.org/home" target="_blank">Nehme Lab</a>, Broad Institute</h3>
               <p>
-                A free Open Source Portfolio for anyone to use for free.
+                As the only computational associate in the lab, I lead computational analysis for large, multi-donor iPSC “cell village” experiments,
+                integrating CRISPR/Cas9 editing, immune stimulation, and antipsychotic drug
+                perturbations across neurons and astrocytes using bulk and single-cell RNA-seq.
+                My work spans population-level regulatory mapping (eQTLs, R/QTLs),
+                transcription factor network analysis, and multi-omic integration with chromatin profiling (CUT&Tag).
+
+                I develop and maintain scalable, reproducible pipelines for alignment,
+                donor deconvolution (Census-seq, Dropulation), and variant-informed cell
+                assignment, along with genomic QC and data infrastructure management. I also created, maintain, and expand our lab’s GitHub. This research has lead to multiple manuscripts and poster presentations.
               </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>Parcel</li>
-              </ul>
 
               <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                <a href="https://github.com/NehmeLab" class="link__text" target="_blank" rel="noopener noreferrer">
+                  View publically available code <span>&rarr;</span>
                 </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                <a href="#pubs" class="link__text">
+                  View manuscripts <span>&rarr;</span>
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+              <img src="./images/2024_12_011_Battaglia_BroadRetreat.svg" class="work__image" alt="Project 1" />
+              <p class="image-caption">Battaglia, R.A., Liyanage, D., Mazureac, I.,<strong>Bolshakova, S.,</strong> Pettinari, N., Johnson, A., Habib, S., Flessas, I., Woodin, S., Xu, J., Hawes, D., Tegtmeyer, M., Hogan, M., Maglieri, A., McCarroll, S.A., & Nehme, R. (2024). Genetic background influences gene expression changes in NRXN1 knockout iPSC-derived neurons. Poster presentation at Broad Institute Scientific Retreat, Boston, MA. 
             </div>
           </div>
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Calculator</h3>
+              <h3><a href="https://www.cmneurolab.org" target="_blank">Cruz-Martín Lab</a>, Boston University (Now University of Colorado)</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                We wanted to understand whether a highly localized complement perturbation could influence broader cortical circuits. 
+                Using in utero electroporation, we overexpressed the schizophrenia-risk gene C4 in ~2% of prefrontal cortex neurons and performed bulk RNA-seq on microdissected tissue to capture circuit-level effects.
+                 This approach allowed us to ask whether sparse complement overactivation is sufficient to drive widespread transcriptional changes across largely untransfected cells and reveal mechanisms by which local immune dysregulation might propagate through the cortex.
               </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
 
               <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                <a href="https://github.com/sonjbo/C4_bulkRNAseq" class="link__text" target="_blank" rel="noopener noreferrer">
+                  View analysis <span>&rarr;</span>
                 </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                <a href="#pubs" class="link__text">
+                  View manuscript <span>&rarr;</span>
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+              <img src="./images/sfn.JPG" class="work__image" alt="Project 1" />
+              <p class="image-caption"><strong>Bolshakova, S.,</strong> Sifuentes, S.E.C., Phadke, R.A., Brack, A., Caley, P., Dias, C., & Cruz-Martín, A. (2025). Increased complement C4 in a sparse neuronal subset induces network-wide transcriptomic alterations in the prefrontal cortex. Poster presentation at Society for Neuroscience, San Diego, CA.
+              </p>
             </div>
           </div>
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Notificator</h3>
+              <h3>Undergraduate Honors Thesis</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                Motivated by the global variability in reported schizophrenia prevalence, I designed a cross-sectional survey to explore cultural and socioeconomic factors that might shape early, prodromal symptoms. The study included participants from Brazil, India, Italy, and the U.S. (N=200 after filtering). 
+                Using the PQ-B to assess symptom presence and distress, and the Stereotypes of Schizophrenia Scale to measure attitudes, I examined how prodromal symptoms related to immigration status, substance and cannabis use, income, gender, and age. 
+                I also tested the hypothesis that participants from lower-income economies would report higher prodromal symptom rates.
               </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
 
               <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                <a href="https://github.com/sonjbo/Undergraduate-Thesis/tree/main" class="link__text" target="_blank" rel="noopener noreferrer">
+                  View analysis <span>&rarr;</span>
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+                <img src="./images/boxplot_thesis.png" class="work__image" alt="Project 3" />
+              <p class="image-caption">Boxplots representing the differences between participants from the four countries for all the experimental variables </p>
             </div>
           </div>
         </div>
@@ -179,55 +166,89 @@
     <!-- ***** Publications ***** -->
 <section class="pubs" id="pubs">
   <div class="row">
-    <h2>Publications</h2>
+    <h2>Publications and Manuscripts in Preparation</h2>
 
     <div class="pubs__content">
       
       <!-- LEFT COLUMN: Publications List -->
       <div class="pubs__list">
         <ul>
+          <h3><strong>Nehme Lab:</strong></h3>
           <li>
-            Battaglia RA*,<strong>Bolshakova, S*</strong>, Mazureac I, Liyanage D, Pettinar N, Johnson A, Crouse E, Habib S, Flessas I, et al. Gene editing in "cell villages" enables exploring disease-relevant mutations in many genetic backgrounds. bioRxiv 687374 [preprint]. 
-            Nov 10, 2025. *co-first author. Available from: doi.org/10.1101/2025.11.08.687374.</em>
+            Tegtmeyer, M., Pettinari, N., Nemesh, J., Nadig, A., Xu, H.J., Ngo, V., Hogan, M., 
+            <strong>Bolshakova, S.</strong>, Liyanage, D., Peirent, E., Maglieri, A., Hawes, D., Ichihara, K., 
+            McCarroll, S.A., & Nehme, R. (In preparation). 
+            Multiplexed perturbation profiling across multi-donor systems enables population-scale functional genomics 
+            and reveals clozapine-responsive lipid and astrocyte–neuron programs.
           </li>
 
           <li>
-            Matthew Tegtmeyer, Noah Pettinari, Jim Nemesh, Ajay Nadig, He Jax Xu, Vy Ngo, Marina Hogan, <strong>Sonia Bolshakova</strong>, Dhara Liyanange, Emily Peirent, Adrianna Maglieri, Derek Hawes, Kiku Ichihara, Steven A. McCarroll, & Ralda Nehme (in preparation). 
-            Multiplexed perturbation profiling across multidonor systems enables population-scale functional genomics and uncovers clozapine-responsive lipid and astrocyte-neuron gene expression programs.
+            Battaglia, R.A.*, <strong>Bolshakova, S.*</strong>, Mazureac, I., Liyanage, D., Pettinari, N., 
+            Johnson, A., Crouse, E., Habib, S., Flessas, I., Nadig, A., Hawes, D., Tegtmeyer, M., Becker, C., Ghosh, S., 
+            Genovese, G., Hogan, M., Maglieri, A., Barrett, L.E., Daheron, L., McCarroll, S.A., & Nehme, R. (2025). 
+            Gene editing in “cell villages” enables exploring disease-relevant mutations in many genetic backgrounds. 
+            <em>bioRxiv.</em> In revision. https://doi.org/10.1101/2025.11.08.687374 
+            <br><em>*Co-first authors</em>
+            <br><a href="https://doi.org/10.1101/2025.11.08.687374"
+            class="link__text"
+            target="_blank"
+            rel="noopener noreferrer">
+            View on bioRxiv <span>&rarr;</span>
+          </a>
           </li>
-
+      
           <li>
-            <strong>Bolshakova, S.</strong>, Sifuentes, S.E.C., Farsi, Z., Phadke, R.A., Brack, A., Dejanovic, B., & Cruz-Martín, A. (in review). 
+            Andzelm, M.M., <strong>Bolshakova, S.</strong>, Pettinari, N., Tegtmeyer, M., Meyer, D., Johnson, A., 
+            Mello, C.J., Yu, C.T., Mazureac, I., Genovese, G., et al. (2025).
+            Human genetic variation shapes neuronal responses to interferons. 
+            <em>bioRxiv.</em> In revision. https://doi.org/10.1101/2025.05.28.653507
+            <br><a href="https://doi.org/10.1101/2025.05.28.653507" 
+            class="link__text"
+            target="_blank"
+            rel="noopener noreferrer">
+            View on bioRxiv <span>&rarr;</span>
+          </a>
+          </li>
+          <h3><strong>Cruz-Martín Lab:</strong></h3>
+          <li>
+            <strong>Bolshakova, S.</strong>, Sifuentes, S.E.C., Phadke, R.A., Brack, A., Caley, P., Dias, C., & 
+            Cruz-Martín, A. (2025). 
             Increased complement C4 in a sparse neuronal subset induces network-wide transcriptomic alterations in the prefrontal cortex. 
-            <em>bioRxiv.</em> 
-            <a href="https://doi.org/10.1101/2025.05.29.656749" target="_blank">https://doi.org/10.1101/2025.05.29.656749</a>
+            <em>bioRxiv.</em> In revision. https://doi.org/10.1101/2025.05.29.656749
+            <br><a href="https://doi.org/10.1101/2025.05.29.656749" 
+            class="link__text"
+            target="_blank"
+            rel="noopener noreferrer">
+            View on bioRxiv <span>&rarr;</span>
+          </a>
           </li>
-
+      
           <li>
-            Andzelm, M.M., <strong>Bolshakova, S.</strong>, Pettinari, N., Tegtmeyer, M., Meyer, D., Johnson, A., Mello, C.J., Yu, C.T., Mazureac, I., Genovese, G., Maglieri, A., Ichihara, K., Hogan, M., Hawes, D., McCarroll, S.A., & Nehme, R. (in review). 
-            Human genetic variation shapes the response of neurons to interferons. 
-            <em>bioRxiv.</em> 
-            <a href="https://doi.org/10.1101/2025.05.28.653507" target="_blank">https://doi.org/10.1101/2025.05.28.653507</a>
-          </li>
-
-          <li>
-            Fournier, L.A., Phadke, R.A., Salgado, M., Brack, A., <strong>Bolshakova, S.</strong>, Grant, J.R., Luna, N.M.P., & Cruz-Martín, A. (2024). 
-            Overexpression of the schizophrenia risk gene C4 in PV cells drives sex-dependent behavioral deficits and circuit dysfunction. 
-            <em>bioRxiv.</em> 
-            <a href="https://doi.org/10.1101/2024.01.27.575409" target="_blank">https://doi.org/10.1101/2024.01.27.575409</a>
+            Fournier, L.A., Phadke, R.A., Salgado, M., Brack, A., <strong>Bolshakova, S.</strong>, Grant, J.R., 
+            Luna, N.M.P., & Cruz-Martín, A. (2024). 
+            Overexpression of the schizophrenia risk gene C4 in PV cells drives sex-dependent behavioral deficits and circuit dysfunction.
+            <em>iScience.</em> 27(11), 110800.
+            https://doi.org/10.1016/j.isci.2024.110800
+            <br><a href="https://doi.org/10.1016/j.isci.2024.110800"
+            class="link__text"
+            target="_blank"
+            rel="noopener noreferrer">
+            View on bioRxiv <span>&rarr;</span>
+          </a>
           </li>
         </ul>
       </div>
 
       <!-- RIGHT COLUMN: Image + Caption -->
       <div class="pubs__figure">
-        <img src="./images/heatmap.png" alt="Gene expression heatmap" class="pubs__image" />
-        <p class="pubs__caption">
-          Relative expression (visualized as Z-score of the donor-specific measurements) of gene expression (log counts per million) of top induced genes (fold change >4) in response to IFNa (top) or IFNg (bottom). Each column represents a donor; each row represents a gene. Hierarchical clustering was performed for both donors and genes in the IFNa group, and this order was maintained to display IFNg data.
+        <div class="work__image-box">
+          <img src="./images/heatmap.png" alt="Gene expression heatmap" class="pubs__image" />
+          <p class="image-caption">
+           Relative expression (visualized as Z-score of the donor-specific measurements) of gene expression (log counts per million) of top induced genes (fold change >4) in response to IFNa (top) or IFNg (bottom). Each column represents a donor; each row represents a gene. Hierarchical clustering was performed for both donors and genes in the IFNa group, and this order was maintained to display IFNg data.
           <br><em>Source: <a href="https://doi.org/10.1101/2025.05.28.653507" target="_blank">bioRxiv (2025.05.28.653507)</a></em>
         </p>
       </div>
-
+    </div>
     </div>
   </div>
 </section>
@@ -236,18 +257,10 @@
 
   <section class="contact" id="contact">
     <div class="row">
-      <h2>Get in Touch</h2>
+      <h2>Get in Touch!</h2>
       <div class="contact__info">
-        <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
-        </p>
         <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">you@example.com</a>
+        <a href="mailto:sonjbo@gmail.com" class="btn">sonjbo@gmail.com</a>
       </div>
     </div>
   </section>
@@ -259,22 +272,12 @@
       <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
         <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
+          <a href="https://github.com/sonjbo/" title="Link to Github Profile">
             <img src="./images/github.svg" class="footer__social-image" alt="Github">
           </a>
         </li>
         <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
+          <a href="https://www.linkedin.com/in/soniabolshakova/">
             <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
           </a>
         </li>
